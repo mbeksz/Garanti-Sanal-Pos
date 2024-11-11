@@ -126,7 +126,7 @@
               <ul class="purchase-props">
                 <li class="d-flex gap-2">
                   <span>Şirket</span>
-                  <strong>You And More</strong>
+                  <strong>Şirket İsmi</strong>
                 </li>
                 <li class="d-flex gap-2">
                   <span>Sipariş No</span>
