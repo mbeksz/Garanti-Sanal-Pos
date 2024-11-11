@@ -117,8 +117,8 @@ if ($result->num_rows > 0) {
 function GenerateHashData3D($orderId,  $terminalId, $amount, $currencyCode, $store_key,$provision_password)
 {
     $installmentCount = 0; // taksit sayısı
-    $successUrl = "https://abratech.com.tr/youandmore.com/payment-successful.php";
-    $errorUrl = "https://abratech.com.tr/youandmore.com/payment-successful.php";
+    $successUrl = "payment-successful.php";
+    $errorUrl = "error.php";
     $type = "";
     $hashedPassword = GenerateSecurityData($terminalId,$provision_password);
     return strtoupper(hash('sha512', $terminalId . $orderId . $amount . $currencyCode . $successUrl . $errorUrl . $type . $installmentCount . $store_key . $hashedPassword));
